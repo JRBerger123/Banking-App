@@ -1,5 +1,12 @@
-/*
- * 
+/**
+ * The Account class for the Banking App. Used in the BankApp.java file.
+ * <p>
+ * The Account class represents a bank account with a unique id, first name, last name, and balance.
+ * </p>
+ * @author jrberger111, ...
+ * @version beta 0.1
+ * @since 2025.02.10
+ * @see <a href="https://github.com/JRBerger123/Banking-App">GitHub Repository</a>
  */
 
 public class Account {
