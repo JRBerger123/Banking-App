@@ -18,7 +18,6 @@ This Java-based Banking App is a console application that allows users to perfor
 ## App Preview
 
 ![Screenshot of the application's output](Other/Preview.png)<br>
-[InvoiceApp.txt](Other/InvoiceApp.txt)<br>
 <br>
 
 ## Features
@@ -60,15 +59,15 @@ To install and run this project locally, follow these steps:
     ```
 2. Navigate to the project directory:
     ```sh
-    cd Invoice-App
+    cd Banking-App
     ```
 3. Compile the Java source files:
     ```sh
-    javac src/InvoiceApp.java -d bin
+    javac src/BankApp.java -d bin
     ```
 4. Run the application:
     ```sh
-    java -cp bin InvoiceApp
+    java -cp bin BankingApp
     ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

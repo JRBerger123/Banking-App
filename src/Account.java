@@ -1,3 +1,7 @@
+/*
+ * 
+ */
+
 public class Account {
     private static int lastId = 0; // last id assigned to an account
     private final int id; // unique id for this account
