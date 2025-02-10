@@ -3,7 +3,7 @@
  * <p>
  * The Account class represents a bank account with a unique id, first name, last name, and balance.
  * </p>
- * @author jrberger123, ...
+ * @author jrberger123, 28cyager
  * @version beta 0.1
  * @since 2025.02.10
  * @see <a href="https://github.com/JRBerger123/Banking-App">GitHub Repository</a>
