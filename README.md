@@ -116,8 +116,8 @@ Helpful resources for README Template Examples:
 
 ## Top Contributors
 
-<a href="https://github.com/JRBerger123/Invoice-App/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=JRBerger123/Invoice-App" alt="contrib.rocks image" />
+<a href="https://github.com/JRBerger123/Banking-App/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=JRBerger123/Banking-App" alt="contrib.rocks image" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
