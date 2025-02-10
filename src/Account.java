@@ -16,6 +16,11 @@ public class Account {
     private String lastName; // last name of the account holder
     private double balance; // current balance of the account
 
+    /**
+     *
+     * @param firstName uses the first name for the personal account
+     * @param lastName uses the last name for the personal account
+     */
     public Account(String firstName, String lastName) {
         if (firstName == null || firstName == "") {
             throw new IllegalArgumentException("First name cannot be null or blank.");
@@ -29,18 +34,34 @@ public class Account {
         this.balance = 0.0;
     }
 
+    /**
+     *
+     * @return balance from any previous deposits or withdrawls
+     */
     public double getBalance() {
         return balance;
     }
 
+    /**
+     *
+     * @param firstName in order to set the first name for the account
+     */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    /**
+     *
+     * @param lastName in order to set the last name for the account
+     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    /**
+     *
+     * @param amount is used to throw an error if the deposit is less than 0 and added to balance otherwise
+     */
     public void deposit(double amount) {
         if (amount <= 0) {
             throw new IllegalArgumentException("Deposit amount must be greater than zero.");
@@ -48,6 +69,10 @@ public class Account {
         balance += amount;
     }
 
+    /**
+     *
+     * @param amount is used to throw an error if the withdrawl is more than the balance, or less than or equal to 0, or subtracted from balance otherwise
+     */
     public void withdrawal(double amount) {
         if (amount <= 0) {
             throw new IllegalArgumentException("Withdrawal amount must be greater than zero.");
@@ -58,6 +83,10 @@ public class Account {
         balance -= amount;
     }
 
+    /**
+     *
+     * @return overrides the toString method and returns a default string format
+     */
     @Override
     public String toString() {
         return String.format("Account ID: %d\nName: %s %s\nBalance: %,.2f", id, firstName, lastName, balance);
