@@ -17,7 +17,7 @@ This Java-based Banking App is a console application that allows users to perfor
 
 ## App Preview
 
-![Screenshot of the application's output](Other/Preview.png)<br>
+![Screenshot of the application's output](assets/Preview.png)<br>
 <br>
 
 ## Features
