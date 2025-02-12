@@ -4,7 +4,7 @@
  * The Account class represents a bank account with a unique id, first name, last name, and balance.
  * </p>
  * @author jrberger123, 28cyager
- * @version beta 0.1
+ * @version 1.0
  * @since 2025.02.10
  * @see <a href="https://github.com/JRBerger123/Banking-App">GitHub Repository</a>
  */
@@ -36,7 +36,7 @@ public class Account {
 
     /**
      *
-     * @return balance from any previous deposits or withdrawls
+     * @return show balance currently in account
      */
     public double getBalance() {
         return balance;
