@@ -9,6 +9,9 @@
  * @see <a href="https://github.com/JRBerger123/Banking-App">GitHub Repository</a>
  */
 
+/**
+ * Description: The default constructor sets a unique account id based on the
+ */
 public class Account {
     private static int lastId = 0; // last id assigned to an account
     private final int id; // unique id for this account
@@ -17,7 +20,7 @@ public class Account {
     private double balance; // current balance of the account
 
     /**
-     *
+     *Description: The overload constructor calls the default constructor and then allows overriding the default values for the account owner's name by calling the setters for data validation
      * @param firstName uses the first name for the personal account
      * @param lastName uses the last name for the personal account
      */
