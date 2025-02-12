@@ -22,15 +22,9 @@ public class Account {
      * @param lastName uses the last name for the personal account
      */
     public Account(String firstName, String lastName) {
-        if (firstName == null || firstName == "") {
-            throw new IllegalArgumentException("First name cannot be null or blank.");
-        }
-        if (lastName == null || lastName == "") {
-            throw new IllegalArgumentException("Last name cannot be null or blank.");
-        }
         this.id = ++lastId;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        setFirstName(firstName);
+        setLastName(lastName);
         this.balance = 0.0;
     }
 
@@ -47,6 +41,9 @@ public class Account {
      * @param firstName in order to set the first name for the account
      */
     public void setFirstName(String firstName) {
+        if (firstName == null || firstName == "") {
+            throw new IllegalArgumentException("Invalid first name! Name can't be blank for id: " + this.id);
+        }
         this.firstName = firstName;
     }
 
@@ -55,6 +52,9 @@ public class Account {
      * @param lastName in order to set the last name for the account
      */
     public void setLastName(String lastName) {
+        if (lastName == null || lastName == "") {
+            throw new IllegalArgumentException("Invalid last name! Name can't be blank for id: " + this.id);
+        }
         this.lastName = lastName;
     }
 
@@ -64,7 +64,7 @@ public class Account {
      */
     public void deposit(double amount) {
         if (amount <= 0) {
-            throw new IllegalArgumentException("Deposit amount must be greater than zero.");
+            throw new IllegalArgumentException("Invalid Amount [" + amount + "]. Must be greater than 0.");
         }
         balance += amount;
     }
@@ -75,10 +75,10 @@ public class Account {
      */
     public void withdrawal(double amount) {
         if (amount <= 0) {
-            throw new IllegalArgumentException("Withdrawal amount must be greater than zero.");
+            throw new IllegalArgumentException("Invalid Amount [" + amount + "]. Must be greater than 0.");
         }
         if (amount > balance) {
-            throw new IllegalArgumentException("Insufficient funds.");
+            throw new IllegalArgumentException("Invalid amount [" + amount + "]. It cannot be greater than the account balance [" + balance + "].");
         }
         balance -= amount;
     }
