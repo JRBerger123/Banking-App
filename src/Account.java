@@ -84,8 +84,10 @@ public class Account {
     }
 
     /**
+     * Returns the general account information (ID and name) as a string.
+     * This method overrides the default {@code toString()} method in {@code Object}.
      *
-     * @return overrides the toString method and returns a default string format
+     * @return A string representation of the account, typically in the format "Account{id=..., name=...}".
      */
     @Override
     public String toString() {
