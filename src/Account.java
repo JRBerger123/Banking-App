@@ -4,7 +4,7 @@
  * The Account class represents a bank account with a unique id, first name, last name, and balance.
  * </p>
  * @author Brandon Berger, Christian Jager
- * @version 1.0
+ * @version 1.1
  * @since 2025.02.10
  * @see <a href="https://github.com/JRBerger123/Banking-App">GitHub Repository</a>
  */
@@ -35,13 +35,21 @@ public class Account {
     private double balance;
 
     /**
+     * The default constructor sets a unique account id based on the last account id and also sets all the initial values for instance level fields
+     */
+    public Account() {
+        this.id = lastId;
+        lastId++;
+    }
+
+    /**
      * The overload constructor calls the default constructor and then allows overriding the default values for the account owner's name by calling the setters for data validation.
      * 
      * @param firstName uses the first name for the personal account
      * @param lastName uses the last name for the personal account
      */
     public Account(String firstName, String lastName) {
-        this.id = ++lastId;
+        this();
         setFirstName(firstName);
         setLastName(lastName);
         this.balance = 0.0;
